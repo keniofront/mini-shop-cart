@@ -30,7 +30,7 @@ Projeto pessoal desenvolvido como prática de React, com foco em gerenciamento d
 
 ```bash
 # Clone o repositório
-git clone https://github.com/keniofront/mini-todo-react.git
+git clone https://github.com/keniofront/mini-shop-cart.git
 
 # Acesse o diretório
 cd mini-todo-react
@@ -46,7 +46,6 @@ pnpm run dev
 
 - ✅ **Responsivo**: Desktop, Tablet, Mobile
 - ✅ **Browsers**: Chrome, Firefox, Safari, Edge
-- ✅ **API**: OMDb API (https://www.omdbapi.com/)
 
 ## 💡 Aprendizados
 
