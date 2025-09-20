@@ -1,0 +1,109 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -600px;
+  z-index: 1000;
+  width: 400px;
+  height: 100%;
+  padding: 1rem;
+  overflow: hidden;
+  background: var(--color2);
+  background-image: url(../../Assets/fruits-background-fordark.png);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.3);
+  transition: right 0.3s ease-in-out;
+}
+
+.closeCont {
+  display: flex;
+  justify-content: end;
+}
+
+.close {
+  width: 32px;
+  height: 32px;
+  color: var(--color3);
+  font-weight: 800;
+  font-size: 1.2rem;
+  text-align: center;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.close:hover {
+  color: white;
+  background: var(--color4);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.titleText {
+  margin: 2rem 0;
+  color: white;
+  font-size: 2rem;
+}
+
+.open {
+  right: 0;
+}
+
+.showProductsCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+}
+
+.itensContainer {
+  overflow-y: auto;
+}
+
+.item {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  padding: 1rem 2rem;
+  border: 2px solid white;
+  border-radius: 1rem;
+}
+.item img {
+  width: auto;
+  height: 80px;
+}
+
+.item .itemDesc {
+  flex: 1;
+  color: white;
+}
+
+.removeBtn {
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.removeBtn:hover {
+  color: var(--color4);
+}
+
+.payTotalCont {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-top: 2px solid white;
+}
+
+@media (max-width: 700px) {
+  .sidebar {
+    width: 340px;
+  }
+}

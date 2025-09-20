@@ -1,0 +1,33 @@
+:root {
+  --color1: #f3ead9;
+  --color2: #e62727;
+  --color3: #700000;
+  --color4: #58baba;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+.section {
+  padding: 2rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: url(./Assets/fruits-background-forbright.png) center/cover no-repeat;
+  background-color: var(--color1);
+  background-blend-mode: multiply;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

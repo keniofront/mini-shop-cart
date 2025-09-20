@@ -1,0 +1,65 @@
+.footer {
+  height: 48px;
+  color: white;
+  background: #e62727;
+  background-image: url(../../Assets/fruits-background-fordark.png);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0;
+}
+
+.logoMobile {
+  display: none;
+}
+
+.buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.btnCont {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btnCont a {
+  color: white;
+  text-decoration: none;
+}
+
+.btnCont:hover,
+.btnCont a:hover {
+  color: #07bebe;
+}
+
+.icon {
+  font-size: 1.5rem;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 100%;
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .logoDesktop {
+    display: none;
+  }
+
+  .logoMobile {
+    display: block;
+  }
+}

@@ -1,0 +1,144 @@
+.container {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+  gap: 2rem;
+  height: 100%;
+}
+
+.imgCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.imgCont img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.descCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.titleEpriceEDescCont {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.titleEpriceCont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titleEpriceCont h2 {
+  color: var(--color3);
+  font-size: 2.5rem;
+}
+
+.titleEpriceCont p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  color: white;
+  font-weight: 600;
+  font-size: 3rem;
+  background-color: var(--color3);
+  border-radius: 1rem;
+}
+
+.descText {
+  width: 90%;
+  color: var(--color3);
+  font-size: 1.2rem;
+}
+
+.qtdECartCont {
+  display: flex;
+  gap: 2rem;
+  align-items: end;
+}
+
+.qtdBtn {
+  display: flex;
+  flex-direction: column;
+}
+
+.qtdBtn label {
+  margin-left: 8px;
+  color: var(--color3);
+  font-weight: 600;
+}
+
+.qtdBtn input {
+  width: 64px;
+  height: 56px;
+  margin: 0;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: var(--color3);
+  border: none;
+  border-radius: 1rem;
+}
+
+.cartBtn {
+  display: flex;
+  flex: 1;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  background-color: var(--color4);
+  border: none;
+  border-radius: 1rem;
+  transition: filter 0.3s ease;
+}
+
+.cartBtn:hover {
+  filter: contrast(130%);
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .titleEpriceEDescCont {
+    gap: 2rem;
+  }
+
+  .descText {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .titleEpriceCont h2 {
+    flex: 1;
+    font-size: 2rem;
+  }
+
+  .titleEpriceCont p {
+    font-size: 2rem;
+  }
+}
